@@ -26,4 +26,160 @@
                 color: #aab3c7;
             }
         }
+
+        .service {
+            text-align: center;
+            margin: 10px 0px;
+            padding: 70px 20px 80px 20px;
+            transition: all ease-in-out 0.3s;
+            background: #fff;
+            box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+                .icon__one {
+
+                    i {
+                        color: #47AEFF;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+                        
+                    }
+                }
+                .icon__two {
+                    i {
+                        color: #FFA76E;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+
+                    }
+                }
+                .icon__three {
+                    i {
+                        color: #E80368;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+
+                    }
+                }
+                .icon__four {
+                    i {
+                        color: #FFBB2C;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+
+                    }
+                }
+                .icon__five {
+                    i {
+                        color: #FF5828;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+
+                    }
+                }
+                .icon__six {
+                    i {
+                        color: #11DBCF;
+                        font-size: 32px;
+                        border: 1px solid #f5f5f5;
+                        border-radius: 50px;
+                        background: #f5f5f5;
+                        width: 64px;
+                        height: 64px;
+                        padding: 18px 0px;
+                        transition: ease-in-out 0.3s;
+
+                    }
+                }
+
+                h4 {
+                    font-weight: 600;
+                    margin: 10px 0px 15px 0px;
+                    font-size: 22px;
+                    a {
+                        color: #414c64;
+                    }
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+        }
+
+        .service:hover {
+            box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.18);
+                .icon__one {
+                    i {
+                        color: #fff;
+                        background: #47AEFF;
+                    }
+                }
+
+                .icon__two {
+                    i {
+                        color: #fff;
+                        background: #FFA76E;
+                    }
+                }
+
+                .icon__three {
+                    i {
+                        color: #fff;
+                        background: #E80368;
+                    }
+                }
+
+                .icon__four {
+                    i {
+                        color: #fff;
+                        background: #FFBB2C;
+                    }
+                }
+
+                .icon__five {
+                    i {
+                        color: #fff;
+                        background: #FF5828;
+                    }
+                }
+
+                .icon__six {
+                    i {
+                        color: #fff;
+                        background: #11DBCF;
+                    }
+                }
+                
+
+        }
 }
