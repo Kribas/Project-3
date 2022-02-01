@@ -1,0 +1,109 @@
+.testimonials {
+    margin-top: 60px;
+    .testimonials__title {
+        text-align: center;
+        padding-bottom: 30px;
+        h2 {
+            padding-bottom: 20px;
+            position: relative;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        h2::after {
+            content: "";
+            background: #ffc107;
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 50px;
+            left: 622px;
+            margin-top: 20px;
+        }
+        p {
+            padding-top: 20px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #aab3c7;
+        }
+    }
+
+    .testimonials__body {   
+        .testimonial {
+            p {
+                    font-style: italic;
+                    margin: 0 15px 0 15px;
+                    padding: 20px 20px 60px 20px;
+                    background: #fafafc;
+                    border-radius: 6px;
+                    position: relative;
+                    z-index: 1;
+                    i {
+                        font-size: 26px;
+                        color: #ffc107;
+                    }
+                .quote-icon-left {
+                    display: inline-block;
+                    position: relative;
+                    left: -5px;
+                }
+                .quote-icon-right {
+                    display: inline-block;
+                    position: relative;
+                    right: -5px;
+                    top: 10px;
+                }
+            }
+            .testimonial__image {
+                width: 90px;
+                border-radius: 50%;
+                position: relative;
+                margin: -40px 0 0 40px;
+                z-index: 2;
+                border: 6px solid #fff;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 10px 0 5px 45px;
+                color: #111;
+            }
+            h4 {
+                font-size: 14px;
+                color: #999;
+                margin: 0 0 0 45px;
+            }
+        }
+
+        .owl-dots {
+            position: relative;
+            padding-top: 70px;
+            text-align: center;
+                .owl-dot {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0px 11px;
+                        span {
+                            background: #fff none repeat scroll 0 0;
+                            bottom: 40px;
+                            display: block;
+                            height: 12px;
+                            position: absolute;
+                            transition: all 0.3s ease 0s;
+                            width: 12px;
+                            opacity: 1;
+                            background: #fff;
+                            border: 1px solid #ffc107;
+                            border-radius: 50%;
+                        }
+
+                        
+                }
+                .active {
+                    span {
+                        background: #FFC107 none repeat scroll 0 0;
+                    }
+                }
+        }
+        
+    }
+}

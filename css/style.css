@@ -339,6 +339,278 @@
   background: #11DBCF;
 }
 
+.call-to-action {
+  background: #414C64;
+  color: #fff;
+  padding: 60px 0;
+  margin-top: 60px;
+}
+
+.call-to-action .section__title h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.call-to-action .section__detail p {
+  font-size: 16px;
+}
+
+.call-to-action .section__button button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #ffc107;
+  color: #fff;
+  background: #414C64;
+}
+
+.call-to-action .section__button button:hover {
+  background: #ffc107;
+  color: #fff;
+}
+
+.testimonials {
+  margin-top: 60px;
+}
+
+.testimonials .testimonials__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.testimonials .testimonials__title h2 {
+  padding-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.testimonials .testimonials__title h2::after {
+  content: "";
+  background: #ffc107;
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 50px;
+  left: 622px;
+  margin-top: 20px;
+}
+
+.testimonials .testimonials__title p {
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #aab3c7;
+}
+
+.testimonials .testimonials__body .testimonial p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #fafafc;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials .testimonials__body .testimonial p i {
+  font-size: 26px;
+  color: #ffc107;
+}
+
+.testimonials .testimonials__body .testimonial p .quote-icon-left {
+  display: inline-block;
+  position: relative;
+  left: -5px;
+}
+
+.testimonials .testimonials__body .testimonial p .quote-icon-right {
+  display: inline-block;
+  position: relative;
+  right: -5px;
+  top: 10px;
+}
+
+.testimonials .testimonials__body .testimonial .testimonial__image {
+  width: 90px;
+  border-radius: 50%;
+  position: relative;
+  margin: -40px 0 0 40px;
+  z-index: 2;
+  border: 6px solid #fff;
+}
+
+.testimonials .testimonials__body .testimonial h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #111;
+}
+
+.testimonials .testimonials__body .testimonial h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonials__body .owl-dots {
+  position: relative;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.testimonials .testimonials__body .owl-dots .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0px 11px;
+}
+
+.testimonials .testimonials__body .owl-dots .owl-dot span {
+  background: #fff none repeat scroll 0 0;
+  bottom: 40px;
+  display: block;
+  height: 12px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 12px;
+  opacity: 1;
+  background: #fff;
+  border: 1px solid #ffc107;
+  border-radius: 50%;
+}
+
+.testimonials .testimonials__body .owl-dots .active span {
+  background: #FFC107 none repeat scroll 0 0;
+}
+
+.portfolio {
+  margin-top: 60px;
+}
+
+.portfolio .portfolio__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.portfolio .portfolio__title h2 {
+  padding-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.portfolio .portfolio__title h2::after {
+  content: "";
+  background: #ffc107;
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 50px;
+  left: 622px;
+  margin-top: 20px;
+}
+
+.portfolio .portfolio__title p {
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #aab3c7;
+}
+
+.portfolio .portfolio-menu {
+  text-align: center;
+}
+
+.portfolio .portfolio-menu ul li {
+  display: inline-block;
+  margin: 0 3px 10px 3px;
+  list-style: none;
+  border-radius: 50px;
+  background: #fafafc;
+  cursor: pointer;
+  color: #414c64;
+  padding: 8px 18px 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-menu ul li:hover {
+  background: #ffc107;
+  color: #414c64;
+}
+
+.portfolio .portfolio-menu ul li.active {
+  color: #414c64;
+  background: #ffc107;
+}
+
+.portfolio .portfolio-item .item {
+  width: 430px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.portfolio .portfolio-item .item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+.portfolio .portfolio-item .item img {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -50px;
+  z-index: 3;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background: #ffc107;
+  padding: 15px 20px;
+}
+
+.portfolio .portfolio-info > h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-info > p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-info a {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-info .details-link {
+  right: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
