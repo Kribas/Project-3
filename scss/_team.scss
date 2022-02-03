@@ -1,0 +1,88 @@
+.team {
+    background-color: #f7f8fa;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    .team__title {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        h2 {
+            padding-bottom: 20px;
+            position: relative;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        h2::after {
+            content: "";
+            background: #ffc107;
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 50px;
+            left: 622px;
+            margin-top: 20px;
+        }
+        p {
+            padding-top: 20px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #aab3c7;
+        }
+    }
+
+    .team__body {
+        .member {
+            box-shadow: 0px 2px 15px rgba(65,76,100,0.06);
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background: #fff;
+
+            .member__image {
+                position: relative;
+                overflow: hidden;
+                    .social {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        height: 40px;
+                        opacity: 0;
+                        transition: ease-in-out 0.3s;
+                        background: rgba(255,255,255,0.85);
+                            a {
+                                color: #414c64;
+                                transition: ease-in-out 0.3s;
+                                font-size: 20px;
+                                    &:hover {
+                                        color: #ffc107;
+                                    }
+                            }
+                    }
+            }
+
+            .member__image:hover {
+                .social {
+                    opacity: 1;
+                }
+            }
+
+                .team__info {
+                    padding: 25px 15px;
+                        h4 {
+                            font-weight: 700;
+                            margin-bottom: 5px;
+                            font-size: 18px;
+                            color: #414c64;
+                        }
+                        span {
+                            display: block;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #aaaa;
+                        }
+                }
+        }
+
+    }
+}

@@ -1,0 +1,157 @@
+.footer {
+    margin-top: 60px;
+    background: #fafafc;
+    padding: 60px 0px 30px 0px;
+        .footer__left {
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 24px;
+                color: #777777;
+            }
+        }
+        .footer__links {
+            h4 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #444444;
+                padding-bottom: 12px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                    li {
+                        padding: 10px 0px;
+                        i {
+                            padding-right: 2px;
+                            color: #ffc107;
+                            font-size: 18px;
+                        }
+                        a {
+                            color: #777777;
+                            transition: 0.3s;
+                            font-size: 14px;
+                                &:hover {
+                                    color: #ffc107;
+                                }
+                        }
+                    }
+            }
+        }
+
+        .footer__services {
+            h4 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #444444;
+                padding-bottom: 12px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                    li {
+                        padding: 10px 0px;
+                        i {
+                            padding-right: 2px;
+                            color: #ffc107;
+                            font-size: 18px;
+                        }
+                        a {
+                            color: #777777;
+                            transition: 0.3s;
+                            font-size: 14px;
+                                &:hover {
+                                    color: #ffc107;
+                                }
+                        }
+                    }
+            }
+        }
+
+        .footer__newsLetter {
+            h4 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #444444;
+                padding-bottom: 12px;
+            }
+            p {
+                margin-top: 0;
+                font-size: 14px;
+                line-height: 24px;
+                color: #777777;
+            }
+            form {
+                margin-top: 30px;
+                background: #fff;
+                padding: 6px 10px;
+                position: relative;
+                border-radius: 50px;
+                border: 1px solid #e1e4ec;
+                    .text__input {
+                        border: none;
+                        padding: 4px 8px;
+                        width: calc(100% - 100px);
+                            &:focus {
+                                outline: #fff;
+                                border: none;
+                            }
+                    }
+                    .button__input {
+                        position: absolute;
+                        top: -1px;
+                        right: -1px;
+                        bottom: -1px;
+                        border: none;
+                        font-size: 16px;
+                        padding: 0px 20px;
+                        background: #ffc107;
+                        color: #fff;
+                        transition: 0.3s;
+                        border-radius: 50px;
+                        box-shadow: 0px 2px 15px rgba(0,0,0,0.10);
+
+                    }
+            }
+        }
+
+        
+}
+
+.footer__bottom {
+    background: #fff;
+    padding: 25px 0px;
+        .copyright {
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                color: #777777;
+                    .text-theme {
+                        color: #ffc107;
+                    }
+            }
+        }
+        
+
+        .social__links {
+            a {
+                font-size: 18px;
+                display: inline-block;
+                background: #e1e4ec;
+                color: #5f6f92;
+                line-height: 1;
+                padding: 8px 0px;
+                margin-right: 4px;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                text-align: center;
+                transition: 0.3s;
+                    &:hover {
+                        background: #ffc107;
+                    }
+            }
+        }
+}

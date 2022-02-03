@@ -23,16 +23,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/owlcarousel/carousel.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
-    />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./js/glightbox/css/glightbox.min.css" />
+    <script src="./js/glightbox/js/glightbox.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -402,7 +405,7 @@
           </p>
         </div>
         <div class="testimonials__body">
-          <div class="owl-carousel">
+          <div id="owl-one" class="owl-carousel">
             <div class="testimonial">
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -506,136 +509,816 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="portfolio-menu mt-2 mb-4">
-                <ul>
-                   <li class="active" data-filter="*">All</li>
-                   <li data-filter=".app">App</li>
-                   <li data-filter=".card">Card</li>
-                   <li data-filter=".web">Web</li>
-                </ul>
-             </div>
-             <div class="portfolio-item row">
-                <div class="item app col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-1.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-1.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item web col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-2.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item app col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-3.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item card col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-4.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item web col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-5.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item app col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-6.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item card col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-7.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item card col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-8.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="item web col-lg-3 col-md-4 col-6 col-sm">
-                    <img class="img-fluid" src="./images/portfolio/portfolio-9.jpg" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="./images/portfolio/portfolio-9.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                            <i class="bx bx-plus"></i>
-                        </a>
-                        <a href="#" class="details-link">
-                            <i class="bx bx-link"></i>
-                        </a>
-                    </div>
-                 </div>
-             </div>
+              <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".app">App</li>
+                <li data-filter=".card">Card</li>
+                <li data-filter=".web">Web</li>
+              </ul>
+            </div>
+            <div class="portfolio-item row">
+              <div class="item app col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-1.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-1.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-2.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-2.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item app col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-3.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-3.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item card col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-4.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-4.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-5.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-5.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item app col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-6.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-6.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item card col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-7.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-7.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item card col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-8.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-8.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+                <img
+                  class="img-fluid"
+                  src="./images/portfolio/portfolio-9.jpg"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <a
+                    href="./images/portfolio/portfolio-9.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="App 1"
+                  >
+                    <i class="bx bx-plus"></i>
+                  </a>
+                  <a
+                    href="portfolio-details.html"
+                    data-glightbox="type: external"
+                    class="portfolio-details-lightbox details-link"
+                    title="Portfolio Details"
+                  >
+                    <i class="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="team__title">
+          <h2>TEAM</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="team__body">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="member">
+                <div class="member__image">
+                  <img src="./images/teams/team-1.jpg" class="img-fluid" />
+                  <div
+                    class="social d-flex align-items-center justify-content-evenly"
+                  >
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team__info text-center">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="member">
+                <div class="member__image">
+                  <img src="./images/teams/team-2.jpg" class="img-fluid" />
+                  <div
+                    class="social d-flex align-items-center justify-content-evenly"
+                  >
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team__info text-center">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="member">
+                <div class="member__image">
+                  <img src="./images/teams/team-3.jpg" class="img-fluid" />
+                  <div
+                    class="social d-flex align-items-center justify-content-evenly"
+                  >
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team__info text-center">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="member">
+                <div class="member__image">
+                  <img src="./images/teams/team-4.jpg" class="img-fluid" />
+                  <div
+                    class="social d-flex align-items-center justify-content-evenly"
+                  >
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team__info text-center">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing__title">
+          <h2>PRICING</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="pricing__body">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="box">
+                <div class="box__title">
+                  <h3>Free</h3>
+                </div>
+                <h4>
+                  <sup>$</sup>
+                  0
+                  <span> / month</span>
+                </h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li class="na">Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="buy__btn">
+                  <button>Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <div class="box__title selected">
+                  <h3>Business</h3>
+                </div>
+                <h4>
+                  <sup>$</sup>
+                  19
+                  <span> / month</span>
+                </h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="buy__btn">
+                  <button class="selected__btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <div class="box__title">
+                  <h3>Developer</h3>
+                </div>
+                <h4>
+                  <sup>$</sup>
+                  29
+                  <span> / month</span>
+                </h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li>Massa ultricies mi</li>
+                </ul>
+                <div class="buy__btn">
+                  <button>Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <span class="advanced">Advanced</span>
+                <div class="box__title">
+                  <h3>Ultimate</h3>
+                </div>
+                <h4>
+                  <sup>$</sup>
+                  49
+                  <span> / month</span>
+                </h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li class="na">Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="buy__btn">
+                  <button>Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="faq__title">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="faq__body">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <i class="bx bx-help-circle icon-help"></i>
+                  Non consectetur a erat nam at lectus urna duis?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                  volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+                  magna fringilla urna porttitor rhoncus dolor purus non.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="bx bx-help-circle icon-help"></i>
+                  Feugiat scelerisque varius morbi enim nunc?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque
+                  habitant morbi. Id interdum velit laoreet id donec ultrices.
+                  Fringilla phasellus faucibus scelerisque eleifend donec
+                  pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                  ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="bx bx-help-circle icon-help"></i>
+                  Dolor sit amet consectetur adipiscing elit?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                  sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                  nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                  pellentesque eu tincidunt. Lectus urna duis convallis
+                  convallis tellus. Urna molestie at elementum eu facilisis sed
+                  odio morbi quis
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <i class="bx bx-help-circle icon-help"></i>
+                  Tempus quam pellentesque nec nam aliquam sem et tortor
+                  consequat?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Molestie a iaculis at erat pellentesque adipiscing commodo.
+                  Dignissim suspendisse in est ante in. Nunc vel risus commodo
+                  viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
+                  bibendum est. Purus gravida quis blandit turpis cursus in.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <i class="bx bx-help-circle icon-help"></i>
+                  Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+                  turpis nunc eget lorem dolor?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris
+                  vitae ultricies leo integer malesuada nunc vel. Tincidunt eget
+                  nullam non nisi est sit amet. Turpis nunc eget lorem dolor
+                  sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__title">
+          <h2>CONTACT</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="contact__body">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>
+                      info@example.com
+                      <br>
+                      contact@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>
+                      +1 5589 55488 55
+                      <br>
+                      +1 6678 254445 41
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-form">
+                <div class="name__email">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" placeholder="Your Name"/>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" placeholder="Your Email"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="subject mt-3">
+                  <input placeholder="Subject"/>
+                </div>
+                <div class="message mt-3">
+                  <textarea placeholder="Message" rows="5"></textarea>
+                </div>
+                <div class="send__btn text-center">
+                  <button>Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer__left mt-3">
+              <h3>Baker</h3>
+            <p>
+              A108 Adam Street
+              <br>
+              New York, NY 535022
+              <br>
+              United States
+              <br>
+              <br>
+              <strong>Phone:</strong>
+              +1 5589 55488 55
+              <br>
+              <strong>Email:</strong>
+              info@example.com
+            </p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer__links mt-3">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Home</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">About Us</a> 
+
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Services</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Terms of Service</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Privacy Policy</a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer__services mt-3">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Web Design</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Web Development</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Product Management</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Marketing</a> 
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a class="text-decoration-none" href="#">Graphic Design</a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer__newsLetter mt-3">
+              <h4>Join Our NewsLetter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form>
+                <input class="text__input" type="email" name="email"/>
+                <input class="button__input" type="submit" value="Subscribe"/>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="copyright mt-3">
+              <p>
+                © Copyright 
+              <strong>Baker</strong>
+              . All Rights Reserved
+              </p>
+              <p>Designed by <span class="text-theme">BootstrapMade</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="social__links text-md-left mt-3">
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-skype"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>
