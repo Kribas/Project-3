@@ -27,11 +27,9 @@
         }
     }
 
-    .portfolio-menu {
-        text-align: center;
-    }
+   
 
-    .portfolio-menu ul li{
+    .work-filter ul li{
         display:inline-block;
         margin: 0 3px 10px 3px;
         list-style:none;
@@ -49,27 +47,40 @@
             background: #ffc107;
             color: #414c64;
         }
+        
     }
 
-    .portfolio-menu ul li.active {
+
+
+    .work-filter ul li.active {
         color: #414c64;
         background: #ffc107;
     }
 
-    
-
-    .portfolio-item .item {
-        width: 430px;
-        margin-bottom: 20px;
-        border: none;
+    .work-filter-item{
+        overflow: hidden;
+            img {
+                position: relative;
+                top: 0;
+                transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
     }
 
-    .item img:hover {
-        .portfolio-info {
-            opacity: 1;
-            bottom: 0;
-        }
+    .work-filter-item:hover .portfolio-info {
+        opacity: 1;
+        bottom: 30px;
     }
+
+    .work-filter-item:hover img {
+        top: -30px;
+    }
+
+    // .item img:hover {
+    //     .portfolio-info {
+    //         opacity: 1;
+    //         bottom: 10px;
+    //     }
+    // }
 
 
     .portfolio-info {
@@ -77,7 +88,7 @@
         position: absolute;
         left: 15px;
         right: 15px;
-        bottom: -50px;
+        bottom: 11px;
         z-index: 3;
         transition: all ease-in-out 0.3s;
         background: #ffc107;

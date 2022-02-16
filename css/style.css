@@ -14,6 +14,10 @@
   color: #fff;
 }
 
+.header .navbar-toggler {
+  color: #fff;
+}
+
 .header .navbar .navbar-nav .nav-item a {
   color: #fff;
 }
@@ -31,6 +35,50 @@
 
 .header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #F4C107;
+}
+
+.header .navbar .navbar-nav .dropdown a {
+  color: #fff;
+}
+
+.header .navbar .navbar-nav .dropdown ul {
+  display: block;
+  position: absolute;
+  list-style: none;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navbar .navbar-nav .dropdown ul li {
+  min-width: 200px;
+  padding: 20px 10px;
+}
+
+.header .navbar .navbar-nav .dropdown ul li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .navbar .navbar-nav .dropdown ul li a:hover {
+  color: #F4C107;
+}
+
+.header .navbar .navbar-nav .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
 }
 
 .header-scrolled {
@@ -524,11 +572,7 @@
   color: #aab3c7;
 }
 
-.portfolio .portfolio-menu {
-  text-align: center;
-}
-
-.portfolio .portfolio-menu ul li {
+.portfolio .work-filter ul li {
   display: inline-block;
   margin: 0 3px 10px 3px;
   list-style: none;
@@ -544,25 +588,34 @@
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-menu ul li:hover {
+.portfolio .work-filter ul li:hover {
   background: #ffc107;
   color: #414c64;
 }
 
-.portfolio .portfolio-menu ul li.active {
+.portfolio .work-filter ul li.active {
   color: #414c64;
   background: #ffc107;
 }
 
-.portfolio .portfolio-item .item {
-  width: 430px;
-  margin-bottom: 20px;
-  border: none;
+.portfolio .work-filter-item {
+  overflow: hidden;
 }
 
-.portfolio .item img:hover .portfolio-info {
+.portfolio .work-filter-item img {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .work-filter-item:hover .portfolio-info {
   opacity: 1;
-  bottom: 0;
+  bottom: 30px;
+}
+
+.portfolio .work-filter-item:hover img {
+  top: -30px;
 }
 
 .portfolio .portfolio-info {
@@ -570,7 +623,7 @@
   position: absolute;
   left: 15px;
   right: 15px;
-  bottom: -50px;
+  bottom: 11px;
   z-index: 3;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;

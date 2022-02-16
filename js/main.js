@@ -10,18 +10,18 @@
         }
     });
 
-    $(document).ready(function() {
-        $('.portfolio-menu ul li').click(function(){
-            $('.portfolio-menu ul li').removeClass('active');
+    $(document).ready(function(){
+    $(".work-filter-list").isotope();
+
+	$(".work-filter li").on('click', function(){
+        $('.work-filter ul li').removeClass('active');
             $(this).addClass('active');
-            
-            var selector = $(this).attr('data-filter');
-            $('.portfolio-item').isotope({
-                filter:selector
-            });
-            return  false;
-        });
-    })
+	    var selector = $(this).attr('data-filter');
+	    $(".work-filter-list").isotope({
+	        filter:selector
+	    });
+	});
+})
     
    
     
