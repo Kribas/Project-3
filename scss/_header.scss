@@ -1,23 +1,35 @@
 .header {
     padding: 20px 10px;
+    height: 95px;
     z-index: 9999;
     transition: all ease-out .5s;
     background: transparent;        
 
-        .logo {      
+        .logo {
+            
             a {
                 font-weight: 600;
                 font-size: 28px;
                 letter-spacing: 2px;
                 color: #fff;
+                display: inline-block;
+                position: absolute;
+                top: 25px;
             }
         }
         
         .navbar-toggler {
             color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            
         }
 
+        
+
         .navbar .navbar-nav .nav-item {
+            
             a {
                 color: #fff;
             }
@@ -35,10 +47,30 @@
             }
         }
 
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+                
+        }
+
+        .show {
+            background-color: rgba(55,64,85,0.9);
+            padding: 20px;
+                ul {
+                    li {
+                        color: #000;
+                    }
+                }
+                                  
+            
+        }
+
         .navbar .navbar-nav .dropdown {
+
             a {
                 color: #fff;
-                
+                    
             }
         }
 
@@ -70,6 +102,7 @@
                         }
                 }
         }
+        
 
 
         .navbar .navbar-nav .dropdown:hover > ul {

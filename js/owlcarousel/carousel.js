@@ -3,7 +3,7 @@ $(document).ready(function(){
         items: 3,
         loop: true,
         dotsEach: true,
-        autoplay: false,
+        autoplay: true,
         responsiveClass:true,
 
         responsive:{
@@ -35,7 +35,7 @@ $(document).ready(function(){
         items: 1,
         loop: true,
         dotsEach: true,
-        autoplay: false
+        autoplay: true
     });
 });
 

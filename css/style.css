@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,400&family=Roboto:wght@100&display=swap");
 .header {
   padding: 20px 10px;
+  height: 95px;
   z-index: 9999;
   -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
@@ -12,10 +13,16 @@
   font-size: 28px;
   letter-spacing: 2px;
   color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
 }
 
 .header .navbar-toggler {
   color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .header .navbar .navbar-nav .nav-item a {
@@ -35,6 +42,26 @@
 
 .header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #F4C107;
+}
+
+.header .navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .show {
+  background-color: rgba(55, 64, 85, 0.9);
+  padding: 20px;
+}
+
+.header .show ul li {
+  color: #000;
 }
 
 .header .navbar .navbar-nav .dropdown a {
@@ -1366,5 +1393,36 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   color: #444444;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #ffc107;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #ffcb30;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
