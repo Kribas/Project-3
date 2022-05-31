@@ -1,0 +1,42 @@
+.header {
+    line-height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: transparent;
+    transition: all ease-out .5s;
+    z-index: 999;
+}
+
+.header__scroll {
+    background-color: rgba(55,64,85,0.9);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.logo a {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding-right: 20px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+
+

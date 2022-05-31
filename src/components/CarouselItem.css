@@ -1,0 +1,49 @@
+.testimonial__text {
+    background-color: #fafafc;
+    padding: 20px 20px 60px 20px;
+    margin: 0 15px 0 15px;
+}
+
+.testimonial__icon {
+        font-size: 26px;
+        color: #ffe7a0;
+}
+
+.owl-carousel .owl-item img {
+    width: 80px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+.carousel__item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px 5px 25px;
+    color: #111;
+}
+
+.item__title {
+    margin: 10px 0px 5px 25px;
+    font-size: 13px;
+    color: #999;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots span {
+    background: #ffc107;
+}
+
+.owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots span {
+    border: 1px solid #ffc107;
+    background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active:hover span, .owl-theme .owl-dots span {
+    background: #ffc107;
+}
+

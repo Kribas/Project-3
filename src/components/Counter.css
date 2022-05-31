@@ -1,0 +1,14 @@
+.counter {
+    padding: 40px 0px;
+    
+}
+
+.counter h3 {
+    font-size: 48px;
+    color: #414c64;
+}
+
+.counter p {
+    margin-bottom: 0;
+    font-size: 14px;
+}

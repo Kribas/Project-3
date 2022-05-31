@@ -1,0 +1,30 @@
+.call__action {
+    background-color: #414c64;
+    margin-top: 60px;
+    padding: 50px 0px;
+}
+
+.call__action h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.call__action p {
+    color: #fff;
+}
+
+.call__action__button {
+    padding: 10px 50px;
+    margin: 10px 0px;
+    border: 1px solid #ffc100;
+    background: transparent;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.call__action__button:hover {
+    background-color: #ffc100;
+    color: #fff;
+}

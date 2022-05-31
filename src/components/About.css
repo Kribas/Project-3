@@ -1,0 +1,35 @@
+.about {
+    margin-top: 50px;
+}
+
+.about__detail > h2 {
+    color: #414c64;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.about__detail > p {
+    color: #848484;
+    font-size: 15px;
+}
+
+.about__detail .about__detail__inner .inner__item {
+    margin-top: 20px;
+}
+
+.inner__item h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.inner__item p {
+    font-size: 15px;
+    color: #848484;
+}
+
+@media (max-width: 912px) {
+    .about__detail__inner {
+        display: none;
+    }
+}

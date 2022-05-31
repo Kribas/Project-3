@@ -1,0 +1,25 @@
+.services__title h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.services__title h3::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #ffc107;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.services__title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #aab3c7;
+}
+

@@ -1,0 +1,95 @@
+.service__card {
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+    padding: 50px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service__card:hover {
+    box-shadow: 0px 5px 90px 0px rgba(120, 133, 141, 0.15);
+}
+
+.blue span {
+    color: #47aeff;
+}
+
+.orange span {
+    color: #ffa76e;
+}
+
+.pink span {
+    color: #e80368;
+}
+
+.yellow span {
+    color: #ffbb2c;
+}
+
+.red span {
+    color: #ff5828;
+}
+
+.green span {
+    color: #11dbcf;
+}
+
+
+
+.service__card:hover .blue span {
+    color: #fff;
+    background-color: #47aeff;
+    border-color: #47aeff;
+}
+
+.service__card:hover .orange span {
+    color: #fff;
+    background-color: #ffa76e;
+    border-color: #ffa76e;
+}
+
+.service__card:hover .pink span {
+    color: #fff;
+    background-color: #e80368;
+    border-color: #e80368;
+}
+
+.service__card:hover .yellow span {
+    color: #fff;
+    background-color: #ffbb2c;
+    border-color: #ffbb2c;
+}
+
+.service__card:hover .red span {
+    color: #fff;
+    background-color: #ff5828;
+    border-color: #ff5828;
+}
+
+.service__card:hover .green span {
+    color: #fff;
+    background-color: #11dbcf;
+    border-color: #11dbcf;
+}
+
+.card__body span {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #f5f5f5;
+    background: #f5f5f5;
+    border-radius: 50%;
+    font-size: 32px;
+    padding: 12px 15px;
+    line-height: 20px;
+    margin: 20px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card__body h4 {
+    color: #414c64;
+}
+
+.card__body p {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
